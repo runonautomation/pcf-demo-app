@@ -7,7 +7,7 @@
     "body-parser": ""
   },
   "scripts": {
-    "test": "rm -rf /tmp/testreport.xml && mocha --reporter mocha-junit-reporter --reporter-options mochaFile=/tmp/testreport.xml test",
+    "test": "mocha --reporter mocha-junit-reporter --reporter-options mochaFile=/tmp/testreport.xml test",
     "start": "node src/server.js --use_strict",
     "test_docker": "docker build -t pcf-demo-app . "
   },
