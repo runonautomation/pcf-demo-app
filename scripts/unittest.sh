@@ -9,3 +9,4 @@ rm -rf ./out/*
 docker wait $CID
 sleep 1
 docker cp $CID:/tmp/testreport.xml out
+docker rm $CID
