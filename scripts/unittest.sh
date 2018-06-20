@@ -6,4 +6,6 @@ docker build -t pcf-demo-app$TS .
 CID=$(docker run -d pcf-demo-app$TS npm run test)
 mkdir -p out
 rm -rf ./out/*
+docker wait $CID
+sleep 1
 docker cp $CID:/tmp/testreport.xml out
