@@ -1,2 +1,3 @@
  #!/bin/bash
-docker run --rm jordi/ab -v 10 https://pcf-demo-app-test.apps.pcf.glpractices.com/servers
+ set -x
+docker run --rm jordi/ab -n 50 https://pcf-demo-app-test.apps.pcf.glpractices.com/servers
