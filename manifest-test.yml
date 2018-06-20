@@ -7,3 +7,5 @@ applications:
   path: .
 env:
   PCF_DEMO_APP_ENV: testing
+services:
+  - oltp
