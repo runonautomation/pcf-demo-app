@@ -2,7 +2,7 @@
 applications:
 - name: pcf-demo-app
   memory: 128M
-  instances: 1
+  instances: 2
   host: pcf-demo-app
   path: .
 env:

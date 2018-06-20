@@ -1,6 +1,6 @@
 ---
 applications:
-- name: pcf-demo-app
+- name: pcf-demo-app-test
   memory: 128M
   instances: 1
   host: pcf-demo-app-test
