@@ -3,7 +3,7 @@
  set -x
  TS=`date "+%Y%m%d-%H%M%S"`
 docker build -t pcf-demo-app$TS .
-CID=$(docker run -d pcf-demo-app$TS npm run test)
+CID=$(docker run -dit pcf-demo-app$TS npm run test)
 mkdir -p out
 rm -rf ./out/*
 docker wait $CID
