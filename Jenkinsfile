@@ -99,11 +99,11 @@ pipeline {
     stage("Production deployment") {
             steps {
             pushToCloudFoundry(
-                target: '!!!Your_system',
+                target: 'api.sys.pcf.glpractices.com',
                 organization: 'practices',
                 cloudSpace: 'production',
                 credentialsId: 'pcfcred',
-                selfSigned: true
+                selfSigned: 'true'
             )
             }
     }
