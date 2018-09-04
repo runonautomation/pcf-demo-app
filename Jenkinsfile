@@ -57,7 +57,7 @@ pipeline {
                 organization: 'practices',
                 cloudSpace: 'dev',
                 credentialsId: 'pcfcred',
-                selfSigned: true,
+                selfSigned: 'true',
                 manifestChoice: [
                     manifestFile: 'manifest-test.yml'
                 ]
