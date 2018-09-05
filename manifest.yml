@@ -1,9 +1,9 @@
 ---
 applications:
-- name: pcf-demo-app-cmd-test
+- name: pcf-demo-app-prod
   memory: 128M
   instances: 1
-  host: pcf-demo-app-cmd-test
+  host: pcf-demo-app-prod
   path: .
 env:
   PCF_DEMO_APP_ENV: production
